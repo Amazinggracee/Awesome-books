@@ -47,7 +47,7 @@ In this project, we will built a basic website that allows users to add/remove b
 In this project:
 - [ ] We understood different ways to create objects in JavaScript.
 - [ ] We created and accessed properties and methods of JavaScript objects.
-<!-- - [ ] Use JavaScript classes.
+- [ ] Use JavaScript classes.
 - [ ]Understand how to use medium-fidelity wireframes to create a UI. -->
 
 # 🛠 Built With <a name="built-with">Technologies</a>
@@ -86,7 +86,7 @@ The entire project was built with only HTML5 and JavaScript.
 - **[key_feature_1]** plain JavaScript with objects.
 - **[key_feature_2]** Implement only a basic UI with plain HTML.
 - **[key_feature_3]** Make sure that data is preserved in the browser's memory by using localStorage.
-<!-- - **[key_feature_3]** Add CSS styles to the application to make it match this wireframe. -->
+- **[key_feature_3]** Add CSS styles to the application to make it match this wireframe. -->
 </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

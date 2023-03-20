@@ -78,7 +78,6 @@ body {
   background-color: var(--theme);
   width: 100px;
   height: 40px;
-  border-radius: 8px;
   border: none;
   padding: 5px;
   color: var(--border);
@@ -107,3 +106,6 @@ button {
   justify-content: center;
   align-items: end;
 }
+/* .book-item:nth-child(even)  {
+  background-color: #d3d3d3;
+} */

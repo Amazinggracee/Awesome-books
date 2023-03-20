@@ -47,11 +47,11 @@ let DisplayBooks = (index) => {
   if (savebook.BookData.indexOf(index) % 2 !== 0) {
     bgcolor = '#fff';
   } else {
-    bgcolor = '#ff99';
+    bgcolor = '#d3d3d3';
   }
   const newBook = document.createElement('div');
   newBook.classList.add('book-item');
-  newBook.classList.add(bgcolor);
+  newBook.style.backgroundColor=bgcolor
   newBook.setAttribute('id', index.bookid);
   newBook.innerHTML = `
  <p>Title: ${index.title} by Author: ${index.author}</p> <br>`;
@@ -65,6 +65,7 @@ let DisplayBooks = (index) => {
 // Add Button
 const addnewBook = document.querySelector('.add-btn');
 addnewBook.addEventListener('click', () => {
+  event.preventDefault()
   const item = getformInput();
   savebook.addBook(item);
 });
