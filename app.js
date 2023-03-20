@@ -61,18 +61,3 @@ let DisplayBooks = (index) => {
   listOfbooks.appendChild(displaybook);
 };
 
-// Add Button
-const addnewBook = document.querySelector('.add-btn');
-addnewBook.addEventListener('click', () => {
-  const item = getformInput();
-  savebook.addBook(item);
-});
-
-window.onload = () => {
-  savebook.BookData = JSON.parse(localStorage.getItem('AllBooks' || '[]'));
-  if (savebook.BookData === null) {
-    savebook.BookData = [];
-    return;
-  }
-  savebook.BookData.forEach((item) => DisplayBooks(item));
-};
