@@ -13,9 +13,16 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [Prerequisites](#Prerequisites)
+  - [:computer: Getting Started](#getting-started)
+    - [Setup](#setup)
+    - [Prerequisites](#Prerequisites)
+    - [install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -47,13 +54,29 @@ In this project:
 - CSS
 - Javascript
 
-### Tech Stack <a name="tech-stack">HTML, CSS and JavaScript</a>
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Version Control</summary>
+  <ul>
+    <li><a href="https://github.com/">Git Hub</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Visual Studio Code</summary>
+  <ul>
+    <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+  </ul>
+</details>
 
 The entire project was built with only HTML5 and JavaScript.
 
 ### Home page
 
 [screenshot for desktop version](./images/pix.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
 
@@ -73,28 +96,113 @@ The entire project was built with only HTML5 and JavaScript.
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started">Awesome-books Repository
+## 💻 Getting Started <a name="getting-started">Awesome-books Repository</a>
+In order to run this project you need:
+
+- Visual Studio Code.
+- Node JS.
+- Git bash.
+- GitHub Account.
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
 
 To run this project clone it with `git clone https://github.com/Amazinggracee/Awesome-books.git`
 then run from a browser
 
 To get a local copy.
-</a>
-
-### Prerequisites
-
-In order to run this project you need:
-
-1. A computer with a code writer, I recommend Visual Studio Code.
-2. A pre-knowledge of HTML,CSS and JavaScript.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-### Install
+Use git clone command or download ZIP folder 
 
-Install linters to handle some common Errors, You can have description about [Linters here](https://github.com/microverseinc/linters-config)
+
+Example commands:
+
+```sh
+  cd my-folder
+  git clone https://github.com/Amazinggracee/Awesome-books.git
+```
+### Prerequisites
+
+In order to run this project you need:
+
+- Visual Studio Code.
+- Node JS.
+- Git bash.
+- GitHub Account.
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Install
+Install this project with:
+
+npm
+
+Example command:
+
+```sh
+  cd my-project
+  npm init -y
+```
+
+```sh
+  cd my-project
+  https://github.com/microverseinc/linters-config
+```
+
+### Usage
+To run the project, execute the following command:
+
+npm start or live server
+
+
+Example command:
+
+```sh
+  GitHub Pages Server
+```
+### Run-tests
+To run tests, run the following command:
+
+npm test
+
+
+Example command:
+
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+```sh
+  npx eslint .
+```
+
+### Deployment
+
+You can deploy this project using:
+
+GitHub Pages 
+
+
+Example: 
+
+```sh
+https://amazinggracee.github.io/Awesome-books/
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -115,6 +223,7 @@ Install linters to handle some common Errors, You can have description about [Li
 
 - GitHub: [@ZiedBenAmor](https://github.com/zied2112)
 - LinkedIn: [@ZiedBenAmor](https://www.linkedin.com/in/zied-ben-amor-924908149/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
