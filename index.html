@@ -10,25 +10,29 @@
     </head>
     
     <body>
-        <header>
-            <nav>
-    
-            </nav>
+        <nav>
+        
+        </nav>
         </header>
         <main class="container">
             <div class="content">
                 <article class="list-container">
                     <div class="title-container">
-                        <h1 class="title-bar">Awesome books</h1>
+                        <h1 class="title-bar">All awesome books</h1>
                     </div>
                     <div class="book-list"></div>
-                </article><br><br>
+                </article>
+                <span class="bar"></span>
+                <!-- <br><br> -->
                 <article class="new-book-container">
-                    <form action="" class="add-form">
-                        <input type="text" class="title" placeholder="Title" required><br>
-                        <input type="text" class="author" placeholder="Author" required><br>
-                        <input type="submit" class="add-btn" value="Add">
-                    </form>
+                    <div class="form-title">
+                        <h2 class="title-bar">Add a book</h2>
+                        <!-- </div><br> -->
+                        <form action="" class="add-form">
+                            <input type="text" class="title" placeholder="Title">
+                            <input type="text" class="author" placeholder="Author">
+                            <button type="submit" class="add-btn" value="Add">Add</button>
+                        </form>
                 </article>
             </div>
         </main>

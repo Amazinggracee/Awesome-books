@@ -52,8 +52,9 @@ let DisplayBooks = (index) => {
   const newBook = document.createElement('div');
   newBook.classList.add('book-item');
   newBook.classList.add(bgcolor);
-  newBook.setAttribute('id', index.bookid); newBook.innerHTML = `
- <p>${index.title} <br> written by ${index.author}</p> <hr>`;
+  newBook.setAttribute('id', index.bookid);
+  newBook.innerHTML = `
+ <p>Title: ${index.title} by Author: ${index.author}</p> <br>`;
   const removeBook = document.createElement('button');
   removeBook.innerHTML = 'Remove';
   removeBook.addEventListener('click', () => savebook.removeBook(index.bookid));
