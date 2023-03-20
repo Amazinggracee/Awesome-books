@@ -42,6 +42,7 @@ body {
   padding: 10px;
   font-size: 18px;
   border-bottom: 1px solid var(--theme);
+  height: auto;
 }
 
 .light {
