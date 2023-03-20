@@ -22,6 +22,11 @@
 
 # 📖 [Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books</a>
 
+
+# Awesome-books
+This Awesome books project is based on an online website that allows users to add/remove books and their authors from a list of books or to form a library of books which are stored in a local storage.
+
+
 In this project, we will built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and added basic events.
 
 **[Milestone]**
