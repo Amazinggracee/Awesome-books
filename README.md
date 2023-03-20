@@ -110,12 +110,14 @@ Install linters to handle some common Errors, You can have description about [Li
 
 - GitHub: [@githubhandle](https://github.com/SulimanJoya)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sjoya66/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 👤 **Zied Ben Amor**
 
 - GitHub: [@ZiedBenAmor](https://github.com/zied2112)
 - LinkedIn: [@ZiedBenAmor](https://www.linkedin.com/in/zied-ben-amor-924908149/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- FUTURE FEATURES -->
 
