@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-use-before-define */
 const listOfBooks = document.querySelector('.book-list');
@@ -51,7 +52,7 @@ let DisplayBooks = (index) => {
   }
   const newBook = document.createElement('div');
   newBook.classList.add('book-item');
-  newBook.style.backgroundColor=bgcolor
+  newBook.style.backgroundColor = bgcolor;
   newBook.setAttribute('id', index.bookid);
   newBook.innerHTML = `
  <p>Title: ${index.title} by Author: ${index.author}</p> <br>`;
@@ -64,8 +65,8 @@ let DisplayBooks = (index) => {
 
 // Add Button
 const addnewBook = document.querySelector('.add-btn');
-addnewBook.addEventListener('click', () => {
-  event.preventDefault()
+addnewBook.addEventListener('click', (e) => {
+  e.preventDefault();
   const item = getformInput();
   savebook.addBook(item);
 });
