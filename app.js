@@ -11,6 +11,15 @@ class Book {
   }
 }
 
+// function empty() {
+//   const x;
+//   x = document.getElementById("Title").value;
+//   if (x == "") {
+//     alert("Enter a Valid Roll Number");
+//     return false;
+//   }
+// }
+
 class StoreBook {
   constructor() {
     // Array of book items
@@ -34,10 +43,10 @@ class StoreBook {
 }
 
 const savebook = new StoreBook();
+const title = document.querySelector('.title');
+const author = document.querySelector('.author');
 // Get input value
 const getformInput = () => {
-  const title = document.querySelector('.title');
-  const author = document.querySelector('.author');
   const insertbook = new Book(title.value, author.value);
   return insertbook;
 };
@@ -66,9 +75,12 @@ let DisplayBooks = (index) => {
 // Add Button
 const addnewBook = document.querySelector('.add-btn');
 addnewBook.addEventListener('click', (e) => {
-  e.preventDefault();
-  const item = getformInput();
-  savebook.addBook(item);
+  if (title.value === '' || author.value === '') {
+    e.preventDefault();
+  } else {
+    const item = getformInput();
+    savebook.addBook(item);
+  }
 });
 
 window.onload = () => {
