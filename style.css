@@ -74,3 +74,40 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+.add-btn {
+  background-color: var(--theme);
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 5px;
+  color: var(--border);
+  font-weight: bold;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+button {
+  background-color: var(--theme);
+  width: 70px;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  color: var(--border);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 6px 2px var(--border);
+  z-index: 999;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+/* .book-item:nth-child(even)  {
+  background-color: #d3d3d3;
+} */
