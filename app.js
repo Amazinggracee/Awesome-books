@@ -11,15 +11,6 @@ class Book {
   }
 }
 
-// function empty() {
-//   const x;
-//   x = document.getElementById("Title").value;
-//   if (x == "") {
-//     alert("Enter a Valid Roll Number");
-//     return false;
-//   }
-// }
-
 class StoreBook {
   constructor() {
     // Array of book items
@@ -82,12 +73,3 @@ addnewBook.addEventListener('click', (e) => {
     savebook.addBook(item);
   }
 });
-
-window.onload = () => {
-  savebook.BookData = JSON.parse(localStorage.getItem('AllBooks' || '[]'));
-  if (savebook.BookData === null) {
-    savebook.BookData = [];
-    return;
-  }
-  savebook.BookData.forEach((item) => DisplayBooks(item));
-};
