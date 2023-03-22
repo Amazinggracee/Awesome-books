@@ -11,11 +11,11 @@ const dateAndTime = () => {
 dateAndTime();
 
 class Book {
-  // constructor(title, author, index) {
-  //   this.title = title;
-  //   this.author = author;
-  //   this.index = index;
-  // }
+  constructor(title, author, index) {
+    this.title = title;
+    this.author = author;
+    this.index = index;
+  }
 
   // static displayBooks() {
   //   const books = Book.getBooks();

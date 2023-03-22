@@ -20,7 +20,7 @@ nav {
   justify-content: space-between;
 }
 
-nav>ul {
+nav > ul {
   min-width: 50%;
   display: flex;
   justify-content: space-around;
@@ -32,13 +32,13 @@ nav>ul {
   font-weight: bold;
 }
 
-nav>ul>li {
+nav > ul > li {
   cursor: pointer;
   padding: 20px;
   border-right: #000 solid 1px;
 }
 
-nav>h1 {
+nav > h1 {
   cursor: pointer;
   font-size: 30px;
   color: #000;
