@@ -1,77 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
 * {
+  margin: 0;
   padding: 0;
-}
-/* some code */
-body {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-container {
+  padding: 10px;
+  width: 600px;
+}
+
+:root {
+  --border: #121213;
+  --theme: rgb(200, 200, 200);
+  --white-color: #fff;
+}
+
+.book-list {
+  margin: 10px auto;
+  padding: 10px 0;
+  border: 2px solid var(--theme);
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--theme);
+  height: auto;
+}
+
+.light {
+  background-color: var(--white-color);
+}
+
+.dark {
+  background-color: var(--border);
+  color: var(--white-color);
+}
+
+.bar {
+  border-bottom: 4px solid var(--border);
+  width: 5rem;
+  display: block;
   text-align: center;
 }
 
-table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td,
-th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-}
-
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #000;
-  color: white;
-}
-
-.form {
-  margin: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-input {
+.author,
+.title {
+  height: 40px;
+  border: 1px solid var(--border);
   width: 300px;
-  height: 20px;
-  border: 1px solid grey;
+  margin: 5px 0;
+  padding: 5px;
 }
 
-.add {
-  width: 100px;
+.title-bar {
+  text-align: center;
   padding: 10px;
-  border: 1px #000 solid;
-  background-color: #fff;
-  color: #000;
-  border-radius: 10px;
 }
 
-.add:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.remove {
+.add-btn {
+  background-color: var(--theme);
   width: 100px;
-  padding: 10px;
-  border: 1px rgb(184, 14, 14) solid;
-  background-color: #fff;
-  color: rgb(184, 14, 14);
-  border-radius: 10px;
+  height: 40px;
+  border: none;
+  padding: 5px;
+  color: var(--border);
+  font-weight: bold;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+button {
+  background-color: var(--theme);
+  width: 70px;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  color: var(--border);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 6px 2px var(--border);
+  z-index: 999;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 
 .remove:hover {
