@@ -1,7 +1,4 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-use-before-define */
-const listOfBooks = document.querySelector('.book-list');
-
+const form = document.querySelector('.form');
 class Book {
   constructor(title, author, index) {
     this.title = title;
@@ -50,38 +47,40 @@ class Book {
     }
   }
 
-const savebook = new StoreBook();
-// Get input value
-const getformInput = () => {
-  const title = document.querySelector('.title');
-  const author = document.querySelector('.author');
-  const insertbook = new Book(title.value, author.value);
-  return insertbook;
-};
-
-// Display the list of books on the web page
-let DisplayBooks = (index) => {
-  let bgcolor = '';
-  if (savebook.BookData.indexOf(index) % 2 !== 0) {
-    bgcolor = '#fff';
-  } else {
-    bgcolor = '#ff99';
+  static clearFields() {
+    document.querySelector('.input-author').value = '';
+    document.querySelector('.input-book').value = '';
   }
-  const newBook = document.createElement('div');
-  newBook.classList.add('book-item');
-  newBook.classList.add(bgcolor);
-  newBook.setAttribute('id', index.bookid); newBook.innerHTML = `
- <p>${index.title} <br> written by ${index.author}</p> <hr>`;
-  const removeBook = document.createElement('button');
-  removeBook.innerHTML = 'Remove';
-  removeBook.addEventListener('click', () => savebook.removeBook(index.bookid));
-  newBook.appendChild(removeBook);
-  listOfBooks.appendChild(newBook);
-};
 
-// Add Button
-const addnewBook = document.querySelector('.add-btn');
-addnewBook.addEventListener('click', () => {
-  const item = getformInput();
-  savebook.addBook(item);
+  static getBooks() {
+    let books;
+    if (localStorage.getItem('books') === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+
+    return books;
+  }
+
+  static removeBook(elemIndex) {
+    let books = Book.getBooks();
+    books = books.filter(
+      (book) => parseInt(book.index, 10) !== parseInt(elemIndex, 10),
+    );
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+}
+document.addEventListener('DOMContentLoaded', Book.displayBooks);
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const author = document.querySelector('.input-author').value;
+  const title = document.querySelector('.input-book').value;
+  if (author === '' || title === '') {
+    alert('Please fill in all fields');
+  }
+  const book = new Book(title, author);
+  Book.addBookToList(book);
+  Book.addBook(book);
+  Book.clearFields();
 });
