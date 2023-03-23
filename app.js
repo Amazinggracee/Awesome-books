@@ -1,5 +1,5 @@
-const form = document.querySelector('.form');
-const timeAndDate = document.querySelector('#time-and-date');
+const form = document.querySelector(".form");
+const timeAndDate = document.querySelector("#time-and-date");
 
 const dateAndTime = () => {
   setInterval(() => {
@@ -17,14 +17,14 @@ class Book {
     this.index = index;
   }
 
-  // static displayBooks() {
-  //   const books = Book.getBooks();
-  //   books.forEach((book) => Book.addBookToList(book));
-  // }
+  static displayBooks() {
+    const books = Book.getBooks();
+    books.forEach((book) => Book.addBookToList(book));
+  }
 
   static addBookToList(book) {
-    const library = document.querySelector('.library');
-    const row = document.createElement('tr');
+    const library = document.querySelector(".library");
+    const row = document.createElement("tr");
     row.innerHTML = `
     <td>${book.title}</td>
     <td> by ${book.author}</td> 
@@ -33,8 +33,8 @@ class Book {
     </button></td>
    `;
     library.appendChild(row);
-    const removeButton = row.querySelector('button');
-    removeButton.addEventListener('click', (e) => {
+    const removeButton = row.querySelector("button");
+    removeButton.addEventListener("click", (e) => {
       this.removeBook(book.index);
       this.deleteBooks(e.target);
     });
@@ -49,26 +49,26 @@ class Book {
       book.index = lastIndex + 1;
     }
     books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
   }
 
   static deleteBooks(el) {
-    if (el.classList.contains('remove')) {
+    if (el.classList.contains("remove")) {
       el.parentElement.parentElement.remove();
     }
   }
 
   static clearFields() {
-    document.querySelector('.input-author').value = '';
-    document.querySelector('.input-book').value = '';
+    document.querySelector(".input-author").value = "";
+    document.querySelector(".input-book").value = "";
   }
 
   static getBooks() {
     let books;
-    if (localStorage.getItem('books') === null) {
+    if (localStorage.getItem("books") === null) {
       books = [];
     } else {
-      books = JSON.parse(localStorage.getItem('books'));
+      books = JSON.parse(localStorage.getItem("books"));
     }
 
     return books;
@@ -77,19 +77,19 @@ class Book {
   static removeBook(elemIndex) {
     let books = Book.getBooks();
     books = books.filter(
-      (book) => parseInt(book.index, 10) !== parseInt(elemIndex, 10),
+      (book) => parseInt(book.index, 10) !== parseInt(elemIndex, 10)
     );
-    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
   }
 }
-document.addEventListener('DOMContentLoaded', Book.displayBooks);
-form.addEventListener('submit', (e) => {
+document.addEventListener("DOMContentLoaded", Book.displayBooks);
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const author = document.querySelector('.input-author').value;
-  const title = document.querySelector('.input-book').value;
-  const error = document.querySelector('.error-message');
-  if (author === '' || title === '') {
-    error.style.display = 'block';
+  const author = document.querySelector(".input-author").value;
+  const title = document.querySelector(".input-book").value;
+  const error = document.querySelector(".error-message");
+  if (author === "" || title === "") {
+    error.style.display = "block";
   }
   const book = new Book(title, author);
   Book.addBookToList(book);
@@ -97,42 +97,42 @@ form.addEventListener('submit', (e) => {
   Book.clearFields();
 });
 
-const logo = document.querySelector('#logo');
-const list = document.querySelector('#list');
-const newbook = document.querySelector('#newbook');
-const contact = document.querySelector('#contact');
-const display = document.querySelector('#display');
-const contactPage = document.querySelector('#contactPage');
-logo.addEventListener('click', () => {
-  list.style.color = 'blue';
-  contact.style.color = 'black';
-  newbook.style.color = 'black';
-  display.style.display = 'block';
-  form.style.display = 'none';
-  contactPage.style.display = 'none';
+const logo = document.querySelector("#logo");
+const list = document.querySelector("#list");
+const newbook = document.querySelector("#newbook");
+const contact = document.querySelector("#contact");
+const display = document.querySelector("#display");
+const contactPage = document.querySelector("#contactPage");
+logo.addEventListener("click", () => {
+  list.style.color = "blue";
+  contact.style.color = "black";
+  newbook.style.color = "black";
+  display.style.display = "block";
+  form.style.display = "none";
+  contactPage.style.display = "none";
 });
-list.addEventListener('click', () => {
-  list.style.color = 'blue';
-  contact.style.color = 'black';
-  newbook.style.color = 'black';
-  display.style.display = 'block';
-  form.style.display = 'none';
-  contactPage.style.display = 'none';
+list.addEventListener("click", () => {
+  list.style.color = "blue";
+  contact.style.color = "black";
+  newbook.style.color = "black";
+  display.style.display = "block";
+  form.style.display = "none";
+  contactPage.style.display = "none";
 });
 
-newbook.addEventListener('click', () => {
-  list.style.color = 'black';
-  contact.style.color = 'black';
-  newbook.style.color = 'blue';
-  form.style.display = 'flex';
-  display.style.display = 'none';
-  contactPage.style.display = 'none';
+newbook.addEventListener("click", () => {
+  list.style.color = "black";
+  contact.style.color = "black";
+  newbook.style.color = "blue";
+  form.style.display = "flex";
+  display.style.display = "none";
+  contactPage.style.display = "none";
 });
-contact.addEventListener('click', () => {
-  list.style.color = 'black';
-  contact.style.color = 'blue';
-  newbook.style.color = 'black';
-  contactPage.style.display = 'block';
-  form.style.display = 'none';
-  display.style.display = 'none';
+contact.addEventListener("click", () => {
+  list.style.color = "black";
+  contact.style.color = "blue";
+  newbook.style.color = "black";
+  contactPage.style.display = "block";
+  form.style.display = "none";
+  display.style.display = "none";
 });
