@@ -133,9 +133,11 @@ input {
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
-.contact{
+
+.contact {
   display: none;
 }
+
 .contact-header {
   text-align: center;
 }
