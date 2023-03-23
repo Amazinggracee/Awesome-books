@@ -1,6 +1,3 @@
-
-
-
 <div align="center">
 
   <h3 id = "readme-top"><b>Awesome-books README </b></h3>
@@ -33,22 +30,25 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books</a>
+# 📖 [Awesome-books]
 
 # Awesome-books
-This Awesome books project is based on an online website that allows users to add/remove books and their authors from a list of books or to form a library of books which are stored in a local storage.
 
+This Awesome books project is based on an online website that allows users to add/remove books and their authors from a list of books or to form a library of books which are stored in a local storage.
 
 In this project, we will built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and added basic events.
 
-
-# 📖 [Online link Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books</a>
+# 📖 [Online link Awesome-books]
 
 In this project:
+
 - [ ] We understood different ways to create objects in JavaScript.
 - [ ] We created and accessed properties and methods of JavaScript objects.
 - [ ] Use JavaScript classes.
-- [ ]Understand how to use medium-fidelity wireframes to create a UI. -->
+- [ ] We understood how to use medium-fidelity wireframes to create a UI.
+- [ ] We understood the concept of single page application.
+- [ ] We used JavaScript to manipulate DOM elements.
+- [ ] We used JavaScript events.
 
 # 🛠 Built With <a name="built-with">Technologies</a>
 
@@ -77,22 +77,29 @@ The entire project was built with only HTML5 and JavaScript.
 ### Home page
 
 [screenshot for desktop version](./images/pix.png)
+[screenshot for desktop version](./images/Add-page.png)
+[screenshot for desktop version](./images/contact-page.png)
+[screenshot for desktop version](./images/List-page.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features">
+
 - **[key_feature_1]** plain JavaScript with objects.
 - **[key_feature_2]** Implement only a basic UI with plain HTML.
 - **[key_feature_3]** Make sure that data is preserved in the browser's memory by using localStorage.
-- **[key_feature_3]** Add CSS styles to the application to make it match this wireframe. -->
+- **[key_feature_4]** Add CSS styles to the application to make it match this wireframe.
+- **[key_feature_5]** Create class methods to add and remove books..
+- **[key_feature_5]** Modify the Awesome books application to have: - A Navigation bar. - Three content sections: - Books list. - Add book form. - Contact info..
 </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo">https://amazinggracee.github.io/Awesome-books/</a>
+## 🚀 Live Demo
+
 - [Live Demo Link](https://amazinggracee.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,6 +107,7 @@ The entire project was built with only HTML5 and JavaScript.
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started">Awesome-books Repository</a>
+
 In order to run this project you need:
 
 - Visual Studio Code.
@@ -124,8 +132,7 @@ To get a local copy.
 
 Clone this repository to your desired folder:
 
-Use git clone command or download ZIP folder 
-
+Use git clone command or download ZIP folder
 
 Example commands:
 
@@ -133,6 +140,7 @@ Example commands:
   cd my-folder
   git clone https://github.com/Amazinggracee/Awesome-books.git
 ```
+
 ### Prerequisites
 
 In order to run this project you need:
@@ -151,6 +159,7 @@ Example command:
  -->
 
 ### Install
+
 Install this project with:
 
 npm
@@ -168,27 +177,29 @@ Example command:
 ```
 
 ### Usage
+
 To run the project, execute the following command:
 
 npm start or live server
-
 
 Example command:
 
 ```sh
   GitHub Pages Server
 ```
+
 ### Run-tests
+
 To run tests, run the following command:
 
 npm test
-
 
 Example command:
 
 ```sh
   npx stylelint "**/*.{css,scss}"
 ```
+
 ```sh
   npx eslint .
 ```
@@ -197,14 +208,14 @@ Example command:
 
 You can deploy this project using:
 
-GitHub Pages 
+GitHub Pages
 
-
-Example: 
+Example:
 
 ```sh
 https://amazinggracee.github.io/Awesome-books/
 ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -229,19 +240,11 @@ https://amazinggracee.github.io/Awesome-books/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]** Create class methods to add and remove books..
-- [ ] **[new_feature_1]** Modify the Awesome books application to have:
-                            - A Navigation bar.
-                            - Three content sections:
-                            - Books list.
-                            - Add book form.
-                            - Contact info..
+- [ ] **[new_feature_1]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
@@ -264,12 +267,11 @@ If you like this project feel free to go through it and comment.
 
 <!-- ACKNOWLEDGEMENTS -->
 
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Design credit:
 > I would like to thank all my morning session team for the support.
-I would like to thank my coding partner.
+> I would like to thank my coding partner.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
