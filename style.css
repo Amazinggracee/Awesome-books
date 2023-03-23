@@ -87,7 +87,7 @@ th {
 .form {
   margin: auto;
   width: 100%;
-  display: flex;
+  display: none;
   gap: 20px;
 }
 
@@ -133,7 +133,9 @@ input {
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
-
+.contact{
+  display: none;
+}
 .contact-header {
   text-align: center;
 }
